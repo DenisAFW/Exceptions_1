@@ -18,7 +18,7 @@ public class Massiv {
     }
 
     private static int[] difOf(int[] arr1, int[] arr2) {
-        if (arr1 == null && arr2 == null) {
+        if (arr1 == null || arr2 == null) {
             throw new RuntimeException("Массив не должен быть равен null!");
         }
         if (arr1.length != arr2.length) {
